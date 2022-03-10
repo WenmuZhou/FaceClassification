@@ -52,7 +52,7 @@ python train.py -c ./config/simple_conf.yaml
 ```
 
 
-## Step3: 测试
+## Step3: 评估
 
 根据实际情况配置文件，然后执行命令
 
@@ -62,6 +62,32 @@ python eval.py -c path_to_conf
 
 等结果就行了。
 
+
+## Step4: 预测
+
+执行命令
+
+```shell
+python predict.py --img_path=images/demo.jpg --model_name=SimpleCNN --model_state_dict=models/simple/SimpleCNN-273-0.9600812650999341.params
+```
+
+## Step5: 模型导出
+
+执行命令
+
+```shell
+python export_model.py --model_name=SimpleCNN --model_state_dict=models/simple/SimpleCNN-273-0.9600812650999341.params --save_path=inference_models
+```
+
+## Step5: inference模型推理
+
+执行命令
+
+```shell
+python infer.py --model_name=SimpleCNN --inference_model=inference_models --image_path=images/demo.jpg
+```
+
+等结果就行了。
 # 六、代码结构与详细说明
 ## 6.1 代码结构
 
