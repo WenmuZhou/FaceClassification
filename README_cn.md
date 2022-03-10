@@ -79,7 +79,7 @@ python predict.py --img_path=images/demo.jpg --model_name=SimpleCNN --model_stat
 python export_model.py --model_name=SimpleCNN --model_state_dict=models/simple/SimpleCNN-273-0.9600812650999341.params --save_path=inference_models
 ```
 
-## Step5: inference模型推理
+## Step6: inference模型推理
 
 执行命令
 
